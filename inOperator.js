@@ -21,3 +21,4 @@ else{
 
 const emptyObj = Object.create(null);
 console.log(emptyObj.hasOwnProperty(key)); //throws TypeError: Object.hasOwnProperty is not a function because when object is created with null , its prototype chaining will be empty so when we are trying to find aboid using hasOwnProperty and use hasOwn
+//Whenever Object is created using null hasOwnProperty doens't exist in its prototype chain so we get above error , whereas hasOwn exists in prototype chain
